@@ -11,4 +11,4 @@ public class ChildActor extends AbstractActor{
 		}).build();
 	}
 
-} 
+}  

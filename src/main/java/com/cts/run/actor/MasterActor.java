@@ -12,4 +12,4 @@ public class MasterActor extends AbstractActor{
 		//ChildActor  childActor =  context.actorOf(Props[Child],"Child");
 	} 
 
-}
+} 
