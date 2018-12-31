@@ -20,7 +20,7 @@ public class RunBasicActor {
 		
 		ActorRef master = system.actorOf(Props.create(MasterActor.class)); // reference of the actor
 		
-		master.tell("Hello Akka", Actor.noSender()); // assign the action to actor
+		master.tell("Hello Akka", Actor.noSender()); // assign the action to actor , tell (“fire-and-forget)
 		
 		//system.terminate();
 		
@@ -38,8 +38,8 @@ public class RunBasicActor {
 		}
 		
 		 // temparature records
-		 ActorRef tempRecord =  system.actorOf(TemapratureDeviceRecord.props("group", "device"), "temparature-record");
-		 tempRecord.tell(new TemapratureDeviceRecord.RecordTemperature(1, 24.0), ActorRef.noSender() ); 
+		/* ActorRef tempRecord =  system.actorOf(TemapratureDeviceRecord.props("group", "device"), "temparature-record");
+		 tempRecord.tell(new TemapratureDeviceRecord.RecordTemperature(1, 24.0), ActorRef.noSender() ); */
 		
 		
 	}
